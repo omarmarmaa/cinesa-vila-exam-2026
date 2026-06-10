@@ -6,6 +6,8 @@ import edu.iesam.presentation.PeliculasView;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
         PeliculasView.function1();
+        PeliculasView.function3();
     }
 }
