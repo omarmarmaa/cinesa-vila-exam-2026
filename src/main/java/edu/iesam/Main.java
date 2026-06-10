@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         PeliculasView.function1();
+        PeliculasView.function2();
         PeliculasView.function3();
     }
 }
