@@ -4,13 +4,13 @@ import edu.iesam.data.PeliculaDataRepository;
 
 public class DeletePeliculaUseCase {
 
-    PeliculaDataRepository peliculaDataRepository;
+    PeliculaRepository peliculaRepository;
 
-    public  DeletePeliculaUseCase(PeliculaDataRepository peliculaDataRepository){
-        this.peliculaDataRepository=peliculaDataRepository;
+    public  DeletePeliculaUseCase(PeliculaRepository peliculaRepository){
+        this.peliculaRepository=peliculaRepository;
     }
 
     public void delete(String id){
-        this.peliculaDataRepository.delete(id);
+        this.peliculaRepository.delete(id);
     }
 }

@@ -4,13 +4,13 @@ import edu.iesam.data.PeliculaDataRepository;
 
 public class AddPeliculasUseCase {
 
-    PeliculaDataRepository peliculaDataRepository;
+    PeliculaRepository peliculaRepository;
 
-    public  AddPeliculasUseCase(PeliculaDataRepository peliculaDataRepository){
-        this.peliculaDataRepository=peliculaDataRepository;
+    public  AddPeliculasUseCase(PeliculaRepository peliculaRepository){
+        this.peliculaRepository=peliculaRepository;
     }
 
     public void add(Pelicula pelicula){
-        peliculaDataRepository.add(pelicula);
+        peliculaRepository.add(pelicula);
     }
 }

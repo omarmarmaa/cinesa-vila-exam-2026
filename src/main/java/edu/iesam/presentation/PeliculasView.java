@@ -12,6 +12,7 @@ public class PeliculasView {
     public static void add(){
         AddPeliculasUseCase addPeliculasUseCase= new AddPeliculasUseCase(new PeliculaDataRepository(PeliculaMemLocalDataSource.getInstance()));
         Pelicula pelicula= new Pelicula("starwars","2010","fantasia","1");
+        addPeliculasUseCase.add(pelicula);
     }
 
     public  static  void get(){
