@@ -3,6 +3,7 @@ package edu.iesam.presentation;
 import edu.iesam.data.PeliculaDataRepository;
 import edu.iesam.data.PeliculaMemLocalDataSource;
 import edu.iesam.domain.AddPeliculasUseCase;
+import edu.iesam.domain.DeletePeliculaUseCase;
 import edu.iesam.domain.Pelicula;
 
 public class PeliculasView {
@@ -12,7 +13,16 @@ public class PeliculasView {
         Pelicula pelicula= new Pelicula("starwars","2010","fantasia","1");
     }
 
+    public  static  void delete(){
+        DeletePeliculaUseCase deletePeliculaUseCase=new DeletePeliculaUseCase(new PeliculaDataRepository(PeliculaMemLocalDataSource.getInstance()));
+        deletePeliculaUseCase.delete("1");
+    }
+
     public static void function1(){
         add();
+    }
+
+    public static void function3(){
+
     }
 }
