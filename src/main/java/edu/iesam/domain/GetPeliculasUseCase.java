@@ -6,13 +6,13 @@ import java.util.ArrayList;
 
 public class GetPeliculasUseCase {
 
-    PeliculaDataRepository peliculaDataRepository;
+    PeliculaRepository peliculaRepository;
 
-    public  GetPeliculasUseCase(PeliculaDataRepository peliculaDataRepository){
-        this.peliculaDataRepository=peliculaDataRepository;
+    public  GetPeliculasUseCase(PeliculaRepository peliculaRepository){
+        this.peliculaRepository=peliculaRepository;
     }
 
     public ArrayList<Pelicula> GetALL(){
-        return  peliculaDataRepository.getALL();
+        return  peliculaRepository.getALL();
     }
 }
